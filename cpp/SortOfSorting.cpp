@@ -6,14 +6,14 @@ bool string_comparator(string s1, string s2) {
 }
 
 int main() {
-    int n; 
+    int n;
     cin >> n;
     vector< vector<string> > output;
 
     while (n != 0) {
         vector<string> names;
         for (int i = 0; i < n; i++) {
-            string name; 
+            string name;
             cin >> name;
             names.push_back(name);
         }
@@ -26,8 +26,8 @@ int main() {
         for (int j = 0; j < output[i].size(); j++) {
             cout << output[i][j] << endl;
         }
-        if (i + 1 < output.size()) cout << endl;
-
+        if (i + 1 < output.size())
+            cout << endl;
     }
 }
 
